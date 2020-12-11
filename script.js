@@ -5,10 +5,10 @@ let label = 'Loading model';
 let maskonButton,maskoffButton;
 let saveButton; 
 let trainButton;
-
+let url = 'https://cthunternhu.github.io/facemask/model.json';
 function modelReady() {
   console.log('Model is ready!!!');
-  classifier.load('model.json', customModelReady);
+  classifier.load(url, customModelReady);
 }
 
 function customModelReady() {
